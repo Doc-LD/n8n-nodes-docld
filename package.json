@@ -1,0 +1,51 @@
+{
+  "name": "@docld/n8n-nodes-docld",
+  "version": "0.1.2",
+  "description": "n8n community node for DocLD – upload, parse, extract, and search documents.",
+  "keywords": [
+    "n8n-community-node-package"
+  ],
+  "license": "MIT",
+  "homepage": "https://docld.com",
+  "author": {
+    "name": "DocLD",
+    "email": "hi@docld.com"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/frostyhand/n8n-nodes-docld"
+  },
+  "main": "index.js",
+  "scripts": {
+    "build": "tsc && gulp build:icons",
+    "dev": "tsc --watch",
+    "format": "prettier nodes credentials --write",
+    "lint": "eslint nodes credentials package.json",
+    "lintfix": "eslint nodes credentials package.json --fix",
+    "prepublishOnly": "npm run build"
+  },
+  "files": [
+    "dist"
+  ],
+  "n8n": {
+    "n8nNodesApiVersion": 1,
+    "credentials": [
+      "dist/credentials/DocLdApi.credentials.js"
+    ],
+    "nodes": [
+      "dist/nodes/DocLd/DocLd.node.js",
+      "dist/nodes/DocLd/DocLdTrigger.node.js"
+    ]
+  },
+  "devDependencies": {
+    "@typescript-eslint/parser": "~7.0.0",
+    "eslint": "~8.56.0",
+    "gulp": "^4.0.2",
+    "n8n-workflow": "*",
+    "prettier": "~3.2.0",
+    "typescript": "~5.4.0"
+  },
+  "peerDependencies": {
+    "n8n-workflow": "*"
+  }
+}

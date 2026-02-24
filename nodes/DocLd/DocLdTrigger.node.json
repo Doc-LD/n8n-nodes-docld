@@ -1,0 +1,19 @@
+{
+	"node": "n8n-nodes-docld.docLdTrigger",
+	"nodeVersion": "1.0",
+	"codexVersion": "1.0",
+	"categories": ["Productivity", "Data & Storage"],
+	"resources": {
+		"credentialDocumentation": [
+			{
+				"url": "https://docld.com/docs/api"
+			}
+		],
+		"primaryDocumentation": [
+			{
+				"url": "https://docld.com/docs/integrations/n8n"
+			}
+		]
+	},
+	"alias": ["document", "webhook", "trigger"]
+}

@@ -1,6 +1,6 @@
 {
   "name": "@docld/n8n-nodes-docld",
-  "version": "0.1.2",
+  "version": "0.1.3",
   "description": "n8n community node for DocLD – upload, parse, extract, and search documents.",
   "keywords": [
     "n8n-community-node-package"
@@ -13,7 +13,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/frostyhand/n8n-nodes-docld"
+    "url": "https://github.com/Doc-LD/n8n-nodes-docld"
   },
   "main": "index.js",
   "scripts": {
